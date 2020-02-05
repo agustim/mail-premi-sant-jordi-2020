@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Òmnium Cultural</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo:400,700|Raleway"
+      rel="stylesheet"
+    />
+    <!-- CSS Reset -->
+    <style type="text/css">
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      /* What it does: Forces Outlook.com to display emails full width. */
+      .ExternalClass {
+        width: 100%;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+      .yshortcuts a {
+        border-bottom: none !important;
+      }
+      /* What it does: Another work-around for iOS meddling in triggered links. */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+      }
+    </style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+      a {
+        color: #f15d32;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #555555;
+      }
+
+      .lloc {
+        font-size: 18px;
+        color: #333333;
+        margin-top: -15px;
+        font-weight: 700;
+      }
+      .estil {
+        font-size: 18px;
+        color: #f15d32;
+      }
+      .data {
+        margin-top: -10px;
+      }
+      .taronja {
+        color: #f15d32;
+      }
+
+      p.footer {
+        font-size: 11px;
+        font-family: "Raleway", sans-serif;
+        line-height: 17px;
+        color: #999999;
+      }
+
+      /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+      }
+      .button-td:hover,
+      .button-a:hover {
+        background: #000000 !important;
+        border-color: #000000 !important;
+      }
+      .email-container {
+        margin-top: 20px !important;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          margin-top: 20px !important;
+          width: 100% !important;
+        }
+
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid,
+        .fluid-centered {
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* And center justify these ones. */
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+          padding: 0px 40px 0px 40px;
+        }
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <table
+      align="center"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="max-width: 600px; margin: 36px auto 36px auto; font-family: 'Roboto Slab', sans-serif;"
+    >
+      <tbody>
+        <tr>
+          <td align="left" style="padding: 0 0 20px 0;">
+            <img
+              alt="Premi Sant Jordi"
+              src="mail.png"
+              style="display: block; padding: 0px; min-width: 280px;"
+              width="100%"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="padding: 0 26px 0 26px; font-size: 16px; line-height: 20px;"
+          >
+            <p>Hola, ${contact.nom!},</p>
+            <p>
+              <span style="font-weight: 400;"
+                >Voldria compartir amb tu el nou llibre que he estat escrivint
+                durant aquests mesos a la pres&oacute;.&nbsp;</span
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400;"
+                >Des del reconeixement de tot el que hem fet, estic
+                conven&ccedil;ut que ho tornarem a fer.&nbsp;</span
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400;"
+                >El llibre no vol donar lli&ccedil;ons a ning&uacute;,
+                sin&oacute; que vol ser, amb tota la humilitat i tendresa, un
+                sincer reconeixement a totes les persones que segueixen
+                lluitant, des de l&rsquo;anonimat i la generositat, per un
+                m&oacute;n una mica m&eacute;s de tots.</span
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400;"
+                >Des de la viv&egrave;ncia personal, &ldquo;Ho tornarem a
+                fer&rdquo; &eacute;s una invitaci&oacute; a perdre la por. Una
+                crida a l&rsquo;acci&oacute; i contra la frustraci&oacute;. Una
+                defensa i elogi de la desobedi&egrave;ncia civil davant els
+                poderosos i les lleis injustes. Un crit d&rsquo;esperan&ccedil;a
+                amb la llibertat plena i el futur esdevenidor.</span
+              >
+            </p>
+            <p><span>Sempre endavant!</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="padding: 0 26px 0 26px; font-size: 16px; line-height: 20px;"
+          >
+            <img
+              width="200px"
+              alt="Signatura Cuixart"
+              src="http://mailing.omnium.cat/public/image_LOAPYAt9g_7e2kdr6m6Xhw.png"
+            />
+            <p>
+              <strong>Jordi Cuixart</strong><br />President d'&Ograve;mnium
+              Cultural<br />Pres&oacute; de Lledoners, 5 de juliol del 2019
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="padding: 0 26px 0 26px; font-size: 16px; line-height: 20px;"
+          >
+            <img
+              alt="penja la llum de la llibertat al teu balc&oacute;"
+              src="http://mailing.omnium.cat/public/image_yhzIyFJzxRv6QwSfcGpERg.jpg"
+              style="display: block; padding: 20px 0px 10px 0px; min-width: 280px;"
+              width="80%"
+            />
+            <a
+              href="https://botiga.omnium.cat/categories/299-ho-tornarem-a-fer.html"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                alt="anar a la botiga"
+                src="http://mailing.omnium.cat/public/image_x2iJ+uMFFydzQbrlJw9DXw.png"
+                style="display: block; padding: 20px 0px 20px 0px; min-width: 240px;"
+                width="35%"
+              />
+            </a>
+            <img
+              alt="Ajuda'ns a defensar la democr&agrave;cia"
+              src="http://mailing.omnium.cat/public/image_n2xVzFhZwzsOqkwKRoPx1g.jpg"
+              style="display: block; padding: 10px 0px 50px 0px; min-width: 220px;"
+              width="90%"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="left" style="padding: 0 0 26px 0;">
+            <img
+              alt="llibre cuixart"
+              src="http://mailing.omnium.cat/public/image_OAX5O3kiU7VX+oxaUM8mBg.jpg"
+              style="display: block; padding: 0px;"
+              width="100%"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding: 0 0 0 0;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td
+                    width="50%"
+                    style="padding: 0 0 0 26px; text-align: left;"
+                  ></td>
+                  <td
+                    width="50%"
+                    style="padding: 0 26px 0 0; text-align: right;"
+                  >
+                    <a
+                      href="https://youtu.be/KGjPNmvrewo"
+                      target="_blank"
+                      rel="noopener"
+                      ><img
+                        alt="veure v&iacute;deo"
+                        src="http://mailing.omnium.cat/public/image_UrNdNkT7AgwMy3bfwgVZXA.jpg"
+                        width="65%"
+                    /></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- FOOTER BEGIN -->
+    <table
+      class="email-container"
+      style="max-width: 600px; border-top: 2px solid #f15d32;"
+      width="100%"
+      align="center"
+    >
+      <tbody>
+        <tr>
+          <td style="padding: 15px;" class="center-on-narrow" height="60%">
+            <a href="https://omnium.cat" target="_blank" rel="noopener">
+              <img
+                src="http://mailing.omnium.cat/public/image_V_L4qca8y6Xw3JhuSBzBCA.png"
+                alt="&Ograve;mnium Cultural"
+                width="80%"
+                border="0"
+            /></a>
+          </td>
+          <td class="center-on-narrow" width="40%">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="https://twitter.com/omnium" style="padding: 5px;"
+                      ><img
+                        src="http://mailing.omnium.cat/public/image_esqS8Chd2SmgKFIL4OL6JQ.png"
+                        alt="Twitter"
+                        width="100%"
+                    /></a>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/omniumcultural"
+                      style="padding: 5px;"
+                      ><img
+                        src="http://mailing.omnium.cat/public/image_EqTrHKTFO_Wo_zwBl+iJ5g.png"
+                        alt="Facebook"
+                        width="100%"
+                        border="0"
+                    /></a>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.youtube.com/user/omniumcultural"
+                      style="padding: 5px;"
+                      ><img
+                        src="http://mailing.omnium.cat/public/image_3Yyd970G4JMOBZOLERYxtA.png"
+                        alt="Youtube"
+                        width="100%"
+                        border="0"
+                    /></a>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.instagram.com/omniumcultural/"
+                      style="padding: 5px;"
+                      ><img
+                        src="http://mailing.omnium.cat/public/image_O6E41lat6eDBE29vI5cIzA.png"
+                        alt="Instagram"
+                        width="100%"
+                        border="0"
+                    /></a>
+                  </td>
+                  <td>
+                    <a href="https://t.me/omnium" style="padding: 5px;"
+                      ><img
+                        src="http://mailing.omnium.cat/public/image_jl7H7QTLM3CbdGZIxGNQnw.png"
+                        alt="Telegram"
+                        width="100%"
+                        border="0"
+                    /></a>
+                  </td>
+                  <td>
+                    <a
+                      href="https://omnium.cat/ca/whatsapp/"
+                      style="padding: 5px;"
+                      ><img
+                        src="http://mailing.omnium.cat/public/image_mt1fgzFnt6T+2jqE5FJiRA.png"
+                        alt="Whatsapp"
+                        width="100%"
+                        border="0"
+                    /></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      class="email-container"
+      style="max-width: 600px;"
+      width="100%"
+      align="center"
+    >
+      <tbody>
+        <tr>
+          <td
+            style="width: 100%; font-size: 11px; font-family: 'Roboto', sans-serif; mso-height-rule: exactly; line-height: 16px; text-align: left; color: #999999; padding-top: 15px; padding-bottom: 50px;"
+          >
+            Per donar-te de baixa, clica
+            <a
+              href="http://mailing.omnium.cat/public/forms/nEEcpyZKek+PGYiWOKOmow/ebI6AG5ppcRs2Az6ptq5Zg/webforms.html?act=unsubscribe&amp;contactId=${contact.encryptedContactId}"
+              >aqu&iacute;</a
+            >. Pots oposar-te al tractament de les teves dades a trav&eacute;s
+            de correu electr&ograve;nic a
+            <a href="mailto:info@omnium.cat">info@omnium.cat</a>, o b&eacute; a
+            &Ograve;mnium Cultural, carrer Diputaci&oacute;, 276, 08009 de
+            Barcelona. Si vols m&eacute;s informaci&oacute;, pots consultar la
+            nostra
+            <a href="https://www.omnium.cat//ca/politica-privacitat/"
+              >Pol&iacute;tica de Privacitat</a
+            >
+            i la nostra
+            <a href="https://www.omnium.cat//ca/politica-de-cookies/"
+              >Pol&iacute;tica de Cookies</a
+            >.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Email Footer : END -->
+  </body>
+</html>
